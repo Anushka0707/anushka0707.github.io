@@ -1,4 +1,4 @@
-# Anushka Singhee — Personal Portfolio
+# Anushka Singhee - Personal Portfolio
 
 A dependency-free responsive portfolio built with semantic HTML, CSS and a small configuration script. It can be deployed directly to Netlify or GitHub Pages.
 
