@@ -2,323 +2,590 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
   <meta
     name="description"
-    content="Portfolio of Anushka Singhee — software engineering, data science, artificial intelligence, embedded systems and robotics projects."
+    content="Portfolio of Anushka Singhee — software engineering, data science, artificial intelligence, cybersecurity and robotics projects."
   />
+
   <meta name="theme-color" content="#0d1117" />
 
   <title>Anushka Singhee | Software, AI & Robotics</title>
 
   <link rel="stylesheet" href="styles.css" />
-  <script defer src="site-config.js"></script>
   <script defer src="script.js"></script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">
+    Skip to content
+  </a>
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Anushka Singhee home">
-      <span class="brand-mark" aria-hidden="true">AS</span>
-      <span>Anushka Singhee</span>
+      <span class="brand-icon">AS</span>
+      <span class="brand-name">Anushka Singhee</span>
     </a>
 
     <nav aria-label="Primary navigation">
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="main">
+
+    <!-- HERO -->
     <section class="hero" id="top">
       <div class="hero-copy">
-        <p class="eyebrow">Software engineering · Data · AI · Robotics</p>
-
-        <h1>Building useful systems, not just polished demos.</h1>
-
-        <p class="hero-intro">
-          I’m Anushka Singhee, a Sydney-based Master of Computer Science student
-          working across machine learning, intelligent agents, scalable data
-          systems, embedded software and robotics.
+        <p class="eyebrow">
+          Software Engineering · Data Science · AI · Robotics
         </p>
 
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">View selected projects</a>
+        <h1>
+          Building practical systems with clear technical purpose.
+        </h1>
+
+        <p class="hero-description">
+          I’m Anushka Singhee, a Sydney-based Master of Computer Science
+          student working across machine learning, intelligent agents,
+          scalable data systems, cybersecurity, embedded software and robotics.
+        </p>
+
+        <div class="button-row">
+          <a class="button primary-button" href="#projects">
+            View my projects
+          </a>
+
           <a
-            class="button secondary config-email"
+            class="button secondary-button"
             href="mailto:anushkasinghee07@gmail.com"
           >
             Email me
           </a>
         </div>
 
-        <ul class="quick-facts" aria-label="Quick facts">
+        <ul class="quick-facts">
           <li>Sydney, Australia</li>
           <li>University of Sydney</li>
           <li>Open to graduate opportunities</li>
         </ul>
       </div>
 
-      <aside class="focus-panel" aria-label="Current work and focus">
-        <p class="panel-label">
-          <span class="status-dot" aria-hidden="true"></span>
+      <aside class="focus-card">
+        <p class="focus-heading">
+          <span class="status-dot"></span>
           Current work
         </p>
 
         <div class="focus-item">
-          <span>01</span>
+          <span class="focus-number">01</span>
+
           <div>
-            <strong>Embedded Systems Engineer</strong>
+            <h2>Embedded Systems Engineer</h2>
             <p>Sydney Interplanetary Rover Initiative</p>
           </div>
         </div>
 
         <div class="focus-item">
-          <span>02</span>
+          <span class="focus-number">02</span>
+
           <div>
-            <strong>Academic Tutor</strong>
+            <h2>Academic Tutor</h2>
             <p>Scalable Data Management · University of Sydney</p>
           </div>
         </div>
 
         <div class="focus-item">
-          <span>03</span>
+          <span class="focus-number">03</span>
+
           <div>
-            <strong>Research interests</strong>
-            <p>Responsible AI, interactive systems and research tooling</p>
+            <h2>Research Interests</h2>
+            <p>Responsible AI, interactive systems and research tools</p>
           </div>
         </div>
       </aside>
     </section>
 
-    <section class="section projects-section" id="projects">
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
       <div class="section-heading">
-        <div>
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects with working code and clear technical scope.</h2>
-        </div>
+        <p class="eyebrow">Selected work</p>
+
+        <h2>
+          Projects across software, data, artificial intelligence and robotics.
+        </h2>
+
         <p>
-          These repositories have been cleaned and documented so another person
-          can understand the design, run the project and inspect its limitations.
+          A selection of deployed client work, machine-learning systems,
+          robotics software and interactive applications.
         </p>
       </div>
 
       <div class="project-grid">
-        <article class="project-card">
-          <div class="card-topline">
-            <p>Robotics · ROS 2</p>
+
+        <!-- RICHA POLYPLAST -->
+        <article class="project-card featured-card">
+          <div class="project-header">
+            <p>Client website · Digital catalogue</p>
             <span>01</span>
           </div>
-          <h3>Rover Wall Finder</h3>
-          <p>
-            Analyses occupancy-grid data, identifies the nearest wall and selects
-            a safe nearby navigation goal for an autonomous rover.
+
+          <h3>Richa Polyplast Website</h3>
+
+          <p class="project-description">
+            Designed, developed and deployed a responsive company website that
+            transforms a static furniture catalogue into a searchable digital
+            collection with category filters, product information and
+            pre-filled customer enquiries.
           </p>
+
           <ul class="tags">
-            <li>Python</li><li>ROS 2</li><li>Navigation2</li><li>Pytest</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Netlify</li>
           </ul>
-          <a class="project-link" data-repo="rover-wall-finder" href="https://github.com/Anushka0707/rover-wall-finder">
-            View repository <span aria-hidden="true">↗</span>
+
+          <a
+            class="project-link"
+            href="https://richa-polyplast.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View live website ↗
           </a>
+
+          <p class="private-note">
+            Source code is private because this website was developed for a
+            commercial client.
+          </p>
         </article>
 
+        <!-- ROVER WALL FINDER -->
         <article class="project-card">
-          <div class="card-topline">
-            <p>Machine learning · Decision systems</p>
+          <div class="project-header">
+            <p>Robotics · ROS 2</p>
             <span>02</span>
           </div>
-          <h3>Contextual Bandits for Dynamic Pricing</h3>
-          <p>
-            Compares neural epsilon-greedy, dropout Thompson sampling and Neural
-            Upper Confidence Bound methods in a reproducible pricing simulator.
+
+          <h3>Rover Wall Finder</h3>
+
+          <p class="project-description">
+            Analyses occupancy-grid data, identifies the nearest wall and
+            selects a safe nearby navigation goal for an autonomous rover.
           </p>
+
           <ul class="tags">
-            <li>PyTorch</li><li>Scikit-learn</li><li>Bandits</li><li>Simulation</li>
+            <li>Python</li>
+            <li>ROS 2</li>
+            <li>Navigation2</li>
+            <li>Pytest</li>
           </ul>
-          <a class="project-link" data-repo="dynamic-pricing-bandits" href="https://github.com/Anushka0707/dynamic-pricing-bandits">
-            View repository <span aria-hidden="true">↗</span>
+
+          <a
+            class="project-link"
+            href="https://github.com/Anushka0707/rover-wall-finder"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View repository ↗
           </a>
         </article>
 
+        <!-- DYNAMIC PRICING -->
         <article class="project-card">
-          <div class="card-topline">
-            <p>Artificial intelligence · Full stack</p>
+          <div class="project-header">
+            <p>Machine learning · Decision systems</p>
             <span>03</span>
           </div>
+
+          <h3>Contextual Bandits for Dynamic Pricing</h3>
+
+          <p class="project-description">
+            Compares neural epsilon-greedy, dropout Thompson sampling and
+            Neural Upper Confidence Bound methods in a reproducible pricing
+            simulation.
+          </p>
+
+          <ul class="tags">
+            <li>PyTorch</li>
+            <li>Scikit-learn</li>
+            <li>Contextual Bandits</li>
+            <li>Simulation</li>
+          </ul>
+
+          <a
+            class="project-link"
+            href="https://github.com/Anushka0707/dynamic-pricing-bandits"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View repository ↗
+          </a>
+        </article>
+
+        <!-- CHATBOT -->
+        <article class="project-card">
+          <div class="project-header">
+            <p>Artificial intelligence · Full stack</p>
+            <span>04</span>
+          </div>
+
           <h3>Routed AI Chatbot</h3>
-          <p>
+
+          <p class="project-description">
             Routes questions through fuzzy FAQ matching, local conversation
             memory and a Granite language model using Bee Agent Framework.
           </p>
+
           <ul class="tags">
-            <li>TypeScript</li><li>React</li><li>SQLite</li><li>Ollama</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>SQLite</li>
+            <li>Ollama</li>
           </ul>
-          <a class="project-link" data-repo="bee-routed-chatbot" href="https://github.com/Anushka0707/bee-routed-chatbot">
-            View repository <span aria-hidden="true">↗</span>
+
+          <a
+            class="project-link"
+            href="https://github.com/Anushka0707/bee-routed-chatbot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View repository ↗
           </a>
         </article>
 
+        <!-- BALL PHYSICS -->
         <article class="project-card">
-          <div class="card-topline">
-            <p>Game development · Object-oriented design</p>
-            <span>04</span>
-          </div>
-          <h3>GREMLINS</h3>
-          <p>
-            A tile-based Processing game with animated movement, enemies,
-            destructible walls, projectiles, multiple levels and teleportation doors.
-          </p>
-          <ul class="tags">
-            <li>Java</li><li>Processing</li><li>JUnit</li><li>Game logic</li>
-          </ul>
-          <a class="project-link" data-repo="gremlins-game" href="https://github.com/Anushka0707/gremlins-game">
-            View repository <span aria-hidden="true">↗</span>
-          </a>
-        </article>
-
-        <article class="project-card">
-          <div class="card-topline">
-            <p>Applied machine learning</p>
+          <div class="project-header">
+            <p>Physics simulation · Creative coding</p>
             <span>05</span>
           </div>
-          <h3>Disease Prediction Demo</h3>
-          <p>
-            An educational machine-learning demonstration with validated symptom
-            input, reproducible model evaluation and a searchable NiceGUI interface.
+
+          <h3>Interactive 3D Ball Physics</h3>
+
+          <p class="project-description">
+            An interactive Processing simulation featuring gravity, damping,
+            wall collisions, sphere collisions and impulse-based collision
+            response.
           </p>
+
           <ul class="tags">
-            <li>Python</li><li>NiceGUI</li><li>Classification</li><li>Ensemble learning</li>
+            <li>Java</li>
+            <li>Processing</li>
+            <li>Vector Mathematics</li>
+            <li>Collision Physics</li>
           </ul>
-          <a class="project-link" data-repo="disease-prediction-system" href="https://github.com/Anushka0707/disease-prediction-system">
-            View repository <span aria-hidden="true">↗</span>
+
+          <a
+            class="project-link"
+            href="https://github.com/Anushka0707/processing-ball-physics"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View repository ↗
           </a>
         </article>
 
+        <!-- GREMLINS -->
         <article class="project-card">
-          <div class="card-topline">
-            <p>Creative coding · Physics simulation</p>
+          <div class="project-header">
+            <p>Game development · Object-oriented design</p>
             <span>06</span>
           </div>
-          <h3>Interactive 3D Ball Physics</h3>
-          <p>
-            Simulates textured spheres with gravity, wall impacts, pairwise
-            collision response, damping and approximate rotational transfer.
+
+          <h3>GREMLINS</h3>
+
+          <p class="project-description">
+            A tile-based Processing game featuring animated movement, enemy
+            behaviour, destructible walls, projectiles, multiple levels and
+            teleportation doors.
           </p>
+
           <ul class="tags">
-            <li>Processing</li><li>Java</li><li>3D graphics</li><li>Vector maths</li>
+            <li>Java</li>
+            <li>Processing</li>
+            <li>JUnit</li>
+            <li>Game Logic</li>
           </ul>
-          <a class="project-link" data-repo="processing-ball-physics" href="https://github.com/Anushka0707/processing-ball-physics">
-            View repository <span aria-hidden="true">↗</span>
+
+          <a
+            class="project-link"
+            href="https://github.com/Anushka0707/gremlins-game"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View repository ↗
+          </a>
+        </article>
+
+        <!-- DISEASE PREDICTION -->
+        <article class="project-card">
+          <div class="project-header">
+            <p>Applied machine learning</p>
+            <span>07</span>
+          </div>
+
+          <h3>Disease Prediction Demo</h3>
+
+          <p class="project-description">
+            An educational machine-learning demonstration with validated
+            symptom input, reproducible model evaluation and a searchable
+            NiceGUI interface.
+          </p>
+
+          <ul class="tags">
+            <li>Python</li>
+            <li>NiceGUI</li>
+            <li>Classification</li>
+            <li>Ensemble Learning</li>
+          </ul>
+
+          <a
+            class="project-link"
+            href="https://github.com/Anushka0707/disease-prediction-system"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View repository ↗
           </a>
         </article>
       </div>
     </section>
 
-    <section class="section about-section" id="about">
-      <div class="section-heading about-heading">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>Technical depth matters most when the result is understandable and useful.</h2>
-        </div>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+
+        <h2>
+          Technical depth matters most when it serves a clear user or research need.
+        </h2>
+
+        <p>
+          I enjoy turning complex ideas into systems that are understandable,
+          testable and maintainable.
+        </p>
       </div>
 
       <div class="about-grid">
-        <div class="about-copy">
+        <div class="about-text">
           <p>
             My work spans machine-learning experiments, intelligent agents,
-            scalable data systems, low-level programming and robotics. I care
-            about clean repository structure, reproducible evaluation, explicit
-            limitations and documentation that allows another person to run and
-            review the project.
+            scalable data systems, low-level programming, web development and
+            robotics.
           </p>
+
           <p>
-            My tutoring, outreach, mentoring and residential-support roles have
-            strengthened how I explain technical ideas, coordinate events and
-            collaborate with people from different backgrounds and levels of experience.
+            I care about clean repository structure, reproducible evaluation,
+            explicit limitations and useful documentation that allows another
+            person to understand and continue developing the project.
+          </p>
+
+          <p>
+            My university roles in tutoring, outreach, postgraduate mentoring
+            and residential support have strengthened how I explain technical
+            concepts and collaborate with people from different backgrounds.
           </p>
         </div>
 
-        <div class="skills" aria-label="Technical skills">
-          <div><h3>Languages</h3><p>Python, Java, C, R, TypeScript, JavaScript, SQL</p></div>
-          <div><h3>Data & AI</h3><p>PyTorch, Scikit-learn, Pandas, Spark, PostgreSQL</p></div>
-          <div><h3>Systems</h3><p>ROS 2, Navigation2, Linux, Git, Gradle</p></div>
-          <div><h3>Interfaces</h3><p>React, NiceGUI, HTML, CSS, responsive design</p></div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Languages</h3>
+            <p>
+              Python, Java, C, R, TypeScript, JavaScript, SQL, HTML and CSS
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Data and AI</h3>
+            <p>
+              PyTorch, Scikit-learn, Pandas, NumPy, Apache Spark and PostgreSQL
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Systems and Robotics</h3>
+            <p>
+              ROS 2, Navigation2, Gazebo, Linux, Git and Gradle
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Interfaces</h3>
+            <p>
+              React, NiceGUI, responsive web design and accessible interfaces
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section experience-section" id="experience">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Experience</p>
-          <h2>Engineering, teaching and student-facing work.</h2>
-        </div>
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-heading short-heading">
+        <p class="eyebrow">Experience</p>
+
+        <h2>
+          Technical work, teaching and community leadership.
+        </h2>
       </div>
 
-      <div class="experience-list">
-        <article>
-          <div><h3>Embedded Systems Engineer</h3><p>Sydney Interplanetary Rover Initiative</p></div>
+      <div class="timeline-list">
+        <article class="timeline-item">
+          <div>
+            <h3>Embedded Systems Engineer</h3>
+            <p>Sydney Interplanetary Rover Initiative</p>
+          </div>
+
           <span>2026 — Present</span>
         </article>
-        <article>
-          <div><h3>Academic Tutor · Scalable Data Management</h3><p>University of Sydney</p></div>
+
+        <article class="timeline-item">
+          <div>
+            <h3>Academic Tutor · Scalable Data Management</h3>
+            <p>University of Sydney</p>
+          </div>
+
           <span>2026 — Present</span>
         </article>
-        <article>
-          <div><h3>Machine Learning & Generative AI Intern</h3><p>Creative Capsule</p></div>
+
+        <article class="timeline-item">
+          <div>
+            <h3>Machine Learning &amp; Generative AI Intern</h3>
+            <p>Creative Capsule</p>
+          </div>
+
           <span>2024 — 2025</span>
         </article>
-        <article>
-          <div><h3>PG-Connect Program Coordinator</h3><p>University of Sydney</p></div>
+
+        <article class="timeline-item">
+          <div>
+            <h3>PG-Connect Program Coordinator</h3>
+            <p>University of Sydney</p>
+          </div>
+
           <span>2025 — Present</span>
+        </article>
+
+        <article class="timeline-item">
+          <div>
+            <h3>Faculty Outreach Communicator</h3>
+            <p>University of Sydney</p>
+          </div>
+
+          <span>2025 — Present</span>
+        </article>
+
+        <article class="timeline-item">
+          <div>
+            <h3>Resident Assistant</h3>
+            <p>University of Sydney</p>
+          </div>
+
+          <span>2023 — Present</span>
         </article>
       </div>
     </section>
 
-    <section class="section education-section" aria-labelledby="education-title">
-      <p class="eyebrow">Education</p>
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="section-heading short-heading">
+        <p class="eyebrow">Education</p>
 
-      <div class="education-row">
-        <div>
-          <h2 id="education-title">Master of Computer Science (Advanced Entry)</h2>
-          <p>University of Sydney · Data Science and AI · Cybersecurity</p>
-        </div>
-        <span>2025 — Present</span>
+        <h2>University of Sydney</h2>
       </div>
 
-      <div class="education-row">
-        <div>
-          <h2>Bachelor of Science</h2>
-          <p>University of Sydney · Data Science · Computer Science</p>
-        </div>
-        <span>2022 — 2024</span>
+      <div class="timeline-list">
+        <article class="timeline-item">
+          <div>
+            <h3>Master of Computer Science (Advanced Entry)</h3>
+            <p>Data Science and AI · Cybersecurity</p>
+          </div>
+
+          <span>2025 — Present</span>
+        </article>
+
+        <article class="timeline-item">
+          <div>
+            <h3>Bachelor of Science</h3>
+            <p>Data Science · Computer Science</p>
+          </div>
+
+          <span>2022 — 2024</span>
+        </article>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="section contact-section" id="contact">
       <p class="eyebrow">Contact</p>
-      <h2>Let’s talk about software, data, artificial intelligence or robotics.</h2>
+
+      <h2>
+        Let’s talk about software, data, artificial intelligence or robotics.
+      </h2>
+
       <p>
-        I’m open to graduate, software engineering, data science, artificial
+        I’m open to software engineering, data science, artificial
         intelligence, robotics and research-focused opportunities.
       </p>
 
-      <div class="contact-links">
-        <a class="button primary config-email" href="mailto:anushkasinghee07@gmail.com">Email me</a>
-        <a class="button secondary config-github" href="https://github.com/Anushka0707">GitHub</a>
-        <a class="button secondary config-linkedin" href="https://www.linkedin.com/in/anushka-singhee-106a98243/">LinkedIn</a>
-        <a class="button secondary config-resume" href="https://drive.google.com/file/d/1umYr-tup8Mn1JpuRewM5di90_QHgh-jh/view">View résumé</a>
+      <div class="button-row">
+        <a
+          class="button primary-button"
+          href="mailto:anushkasinghee07@gmail.com"
+        >
+          Email me
+        </a>
+
+        <a
+          class="button secondary-button"
+          href="https://github.com/Anushka0707"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          class="button secondary-button"
+          href="https://www.linkedin.com/in/anushka-singhee-106a98243/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          class="button secondary-button"
+          href="https://drive.google.com/file/d/1umYr-tup8Mn1JpuRewM5di90_QHgh-jh/view"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View résumé
+        </a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Anushka Singhee</p>
-    <a href="#top">Back to top ↑</a>
+    <p>
+      © <span id="year"></span> Anushka Singhee
+    </p>
+
+    <a href="#top">
+      Back to top ↑
+    </a>
   </footer>
 </body>
 </html>
