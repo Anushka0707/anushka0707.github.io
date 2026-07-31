@@ -82,7 +82,7 @@ p {
   top: 16px;
 }
 
-/* SHARED PAGE WIDTH */
+/* PAGE WIDTH */
 
 .site-header,
 main,
@@ -338,7 +338,7 @@ nav a:focus-visible {
   color: var(--muted);
 }
 
-/* PROJECT AND EXPERIENCE GRIDS */
+/* GRIDS */
 
 .project-grid,
 .experience-grid {
@@ -460,6 +460,15 @@ nav a:focus-visible {
   font-style: italic;
 }
 
+/*
+  Disease Prediction is the seventh project.
+  It spans both desktop columns so the final row appears balanced.
+*/
+
+.disease-card {
+  grid-column: 1 / -1;
+}
+
 /* EXPERIENCE CARDS */
 
 .experience-card {
@@ -514,22 +523,12 @@ nav a:focus-visible {
 }
 
 /*
-  The seventh Outreach Communicator card spans both columns.
-  The first six experience cards remain in a balanced two-column layout.
+  Outreach / Faculty Communicator is the seventh experience.
+  It also spans both desktop columns.
 */
 
 .outreach-card {
   grid-column: 1 / -1;
-}
-
-.additional-experience {
-  margin: 20px 0 0;
-  padding: 16px 18px;
-
-  border-left: 3px solid var(--accent);
-
-  background: rgba(21, 30, 40, 0.5);
-  color: var(--muted);
 }
 
 /* ABOUT */
@@ -717,6 +716,7 @@ footer a:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .disease-card,
   .outreach-card {
     grid-column: auto;
   }
