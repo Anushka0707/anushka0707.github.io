@@ -7,11 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (hasGithub) {
       link.href = `https://github.com/${githubUsername}/${link.dataset.repo}`;
       link.target = "_blank";
-      link.rel = "noreferrer";
-    } else {
+      link.rel = "noopener noreferrer";
+    } else if (!link.getAttribute("href")) {
       link.dataset.disabled = "true";
-      link.textContent = "Add GitHub username in site-config.js";
-      link.removeAttribute("href");
+      link.textContent = "Repository coming soon";
     }
   });
 
@@ -19,37 +18,30 @@ document.addEventListener("DOMContentLoaded", () => {
     if (hasGithub) {
       link.href = `https://github.com/${githubUsername}`;
       link.target = "_blank";
-      link.rel = "noreferrer";
-    } else {
-      link.hidden = true;
+      link.rel = "noopener noreferrer";
     }
   });
 
   const email = (config.email || "").trim();
   document.querySelectorAll(".config-email").forEach((link) => {
-    if (email && email !== "your.email@example.com") {
-      link.href = `mailto:${email}`;
-    } else if (link.getAttribute("href")?.startsWith("mailto:")) {
-      link.hidden = true;
-    }
+    if (email) link.href = `mailto:${email}`;
   });
 
   const optionalLinks = [
     [".config-linkedin", config.linkedInUrl],
     [".config-resume", config.resumeUrl],
   ];
+
   optionalLinks.forEach(([selector, url]) => {
+    if (!url) return;
     document.querySelectorAll(selector).forEach((link) => {
-      if (url) {
-        link.href = url;
-        link.hidden = false;
-        if (!url.startsWith("mailto:")) {
-          link.target = "_blank";
-          link.rel = "noreferrer";
-        }
-      }
+      link.href = url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.hidden = false;
     });
   });
 
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
 });
